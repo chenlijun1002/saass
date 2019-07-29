@@ -1,0 +1,39 @@
+@import "./../../../style/default.less";
+
+.contentBox {
+    padding: 16px;
+    background-color: #fff;
+    :global {
+        .ant-card {
+            color:rgba(0,0,0,0.45);
+        }
+        .ant-card-body {
+            padding: 16px;
+        }
+
+        .ant-progress-inner {
+            width: 62px !important;
+            height: 62px !important;
+        }
+        .ant-btn-primary {
+            background-color: @primary;
+            border-color: @primary;
+        }
+        a {
+            color: @primary;
+        }
+        a:focus {
+            text-decoration: none;
+        }
+        .ant-layout {
+            min-height: 0;
+        }
+    }
+}
+
+.inputForm {
+    display: flex;
+    > div:nth-child(2) {
+        flex: 1
+    }
+}

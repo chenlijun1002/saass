@@ -1,0 +1,232 @@
+@import "./../../../style/default.less";
+
+.contentBox {
+    padding: 16px;
+    background-color: #fff;
+    :global {
+        .ant-card {
+            color:rgba(0,0,0,0.45);
+        }
+        .ant-card-body {
+            padding: 16px;
+        }
+
+        .ant-progress-inner {
+            width: 62px !important;
+            height: 62px !important;
+        }
+        .ant-btn-primary {
+            background-color: @primary;
+            border-color: @primary;
+        }
+        a {
+            color: @primary;
+        }
+        a:focus {
+            text-decoration: none;
+        }
+        .ant-layout {
+            min-height: 0;
+        }
+    }
+
+    .cardList {
+        margin-bottom: 24px;
+        h2 {
+            font-size: 24px;
+            line-height: 34px;
+        }
+        .mg8 {
+            margin: 8px 0;
+        }
+        .mb8 {
+            margin-bottom: 8px;
+        }
+        .lh24 {
+            line-height: 24px;
+            span {
+                background-color: #F0F0F0;
+            }
+        }
+        .mt10 {
+            margin-top: 10px;
+        }
+        .mt20 {
+            margin-top: 20px;
+        }
+        .onRight {
+            text-align: right;
+            vertical-align: middle;
+        }
+        .square {
+            width: 12px;
+            height: 12px;
+            display: inline-block;
+            background-color: @primary;
+            margin-right: 8px;
+        }
+    }
+    .flr {
+        text-align: right;
+        input {
+            width: 344px;
+        }
+    }
+    .inputBox {
+        margin-bottom: 16px;
+    }
+
+    .mainBox {
+        background: #fff;
+        min-height: 0;
+        :global {
+            .ant-menu-item {
+                padding-left: 16px !important;
+            }
+            .ant-menu-inline, .ant-menu-vertical, .ant-menu-vertical-left {
+                border-right: none;
+            }
+            .ant-layout {
+                background: #fff !important;
+            }
+            .ant-table-thead > tr:first-child > th:first-child {
+                border-top-left-radius: 0;
+            }
+            .ant-table-thead > tr:first-child > th:last-child {
+                border-top-right-radius: 0;
+            }
+            .ant-list-item-meta-title {
+                width: 108px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            .ant-layout-content {
+                min-width: 0;
+            }
+        }
+        .menuButton {
+            margin: 32px 0 10px 16px;
+        }
+        .tabBox {
+            margin-left: 16px;
+            background: #fff !important;
+            .topBox {
+                margin-bottom: 16px;
+                .aSpan {
+                    margin-left: 16px;
+                }
+                a {
+                    font-size: 14px;
+                }
+            }
+            :global {
+                .ant-list-item {
+                    padding: 0;
+                    .ant-avatar {
+                        width: 54px;
+                        height: 54px;
+                        border-radius: 0;
+                    }
+                }
+                .ant-table-tbody > tr > td {
+                    padding: 8px 16px;
+                    vertical-align: top;
+                }
+                .ant-table-row {
+                    line-height: 56px;
+                }
+            }
+            .tableBox {
+                position: relative;
+                .selectBox {
+                    position: absolute;
+                    left: 22px;
+                    bottom: 16px;
+                }
+                .changeButton {
+                    margin-right: 8px;
+                }
+                .avatarBox {
+                    position: relative;
+                }
+                .playCircle {
+                    width:20px;
+                    height:20px;
+                    text-align: center;
+                    vertical-align: middle;
+                    background:rgba(0,0,0,0.25);
+                    border:1px solid rgba(255,255,255,1);
+                    border-radius:50%;
+                    opacity:1;
+                    position: absolute;
+                    top: 17px;
+                    left: 17px;
+                    i{
+                        display: block;
+                        font-size: 16px;
+                        color:rgba(232,232,232,1);
+                        opacity:1;
+                        vertical-align: baseline;
+                    }
+                }
+            }
+        }
+        .menuBox {
+            background: #F5F5F5;
+            .menuCount {
+                float: right;
+                color: #BFBFBF;
+            }
+            :global {
+                .ant-btn-dashed:hover, .ant-btn-dashed:focus {
+                    color: @primary;
+                    border-color: @primary;
+                }
+                .ant-menu-item-selected {
+                    color: @primary;
+                    span{
+                        color: @primary;
+                    }
+                }
+                .ant-menu-vertical .ant-menu-item:after, .ant-menu-vertical-left .ant-menu-item:after, .ant-menu-vertical-right .ant-menu-item:after, .ant-menu-inline .ant-menu-item:after {
+                    border-right: 3px solid @primary;
+                }
+            }
+        }
+    }
+}
+
+// 添加分组气泡框
+body {
+    :global {
+        .ant-popover-inner-content {
+            padding: 16px;
+            // height: 134px;
+        }
+        .ant-popover-message {
+            // padding: 0 0 16px 0;
+        }
+        .ant-popover-message-title {
+            padding-left: 0;
+            p {
+                margin-bottom: 8px;
+            }
+            .txtContent {
+                color:rgba(0,0,0,0.45);
+                line-height: 20px;
+            }
+        }
+        .ant-popover-buttons {
+            margin-bottom: 0;
+        }
+        .ant-btn-primary {
+            background-color: @primary;
+            border-color: @primary;
+        }
+        .ant-btn-primary:hover, .ant-btn-primary:focus {
+            background-color: @primary;
+            border-color: @primary;
+        }
+    }
+}

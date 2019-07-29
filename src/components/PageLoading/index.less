@@ -1,0 +1,17 @@
+@import '../../style/default.less';
+:global {
+  .ant-spin{
+    max-height:none !important;
+  }
+  .zent-loading-container-static .zent-page-mask {
+    background: rgba(255, 255, 255, 1);
+  }
+  .zent-page-loading .zent-page-mask::before {
+    background: transparent;
+    background-size: 44px;
+    z-index: 1;
+  }
+  .zent-page-loading .zent-page-mask::after {
+    border-color: @primary transparent transparent;   
+  }
+}

@@ -1,0 +1,44 @@
+//@import '~antd/lib/style/themes/default.less';
+:global{
+  .ant-layout-content{
+    min-width: 1175px;
+  }
+}
+.globalFooter {
+  padding: 0 16px;
+  margin: 24px 0 24px 0;
+  text-align: center;
+  .copyrightImg {
+    display: block;
+    width: 114px;
+    height: 36px;
+    margin: 0 auto 12px;
+  }
+  .links {
+    margin-bottom: 8px;
+
+    a {
+      //color: @text-color-secondary;
+      transition: all 0.3s;
+
+      &:not(:last-child) {
+        margin-right: 40px;
+      }
+
+      &:hover {
+       // color: @text-color;
+      }
+    }
+  }
+
+  .copyright {
+    color: #ccc;
+    //font-size: @font-size-base;
+  }
+}
+
+@media screen and (min-width: 1439px){
+  .globalFooter{
+    margin-right: 184px !important;
+  }
+}

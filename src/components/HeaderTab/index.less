@@ -1,0 +1,29 @@
+.headerTab {
+  position: absolute;
+  top: 0;
+  left: 185px;
+  width: calc(~'100vw - 400px');
+  height: 64px;
+  overflow: hidden;
+  background: #fff;
+  // padding: 16px 0;
+  :global {
+    .zent-tabs-nav-content {
+      height: 64px;
+    }
+    .zent-tabs-third-level {
+      background-color: #fff;
+    }
+    .zent-tabs-tab-inner {
+      height: 64px;
+      line-height: 48px;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+  }
+}
+@media screen and (max-width: 1439px) {
+  .headerTab {
+    // width: calc(~"100vw - 383px");
+  }
+}

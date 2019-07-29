@@ -1,0 +1,116 @@
+//@import '~antd/lib/style/themes/default.less';
+
+.header {
+  height: 72px;
+  padding: 0 12px 0 0;
+  background: #fff;
+  position: relative;
+  border-bottom: 1px solid #f0f0f0;
+  //border-left: 1px solid #f0f0f0;
+  border-right: 1px solid #f0f0f0;
+  box-sizing: content-box;
+}
+
+:global {
+  .ant-layout {
+    min-height: 100vh;
+  }
+}
+.breadcrumbs {
+  font-size: 14px;
+  float: left;
+  padding-left: 16px;
+}
+.right {
+  float: right;
+  height: 100%;
+  width: 184px;
+  padding: 0 16px;
+  font-size: 14px;
+  // border-left: 1px solid #f0f0f0;
+  box-sizing: border-box;
+  cursor: pointer;
+  .action {
+    line-height: normal;
+    cursor: pointer;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s;
+    height: 100%;
+    > i {
+      font-size: 16px;
+      vertical-align: middle;
+      //color: @text-color;
+    }
+    // &:hover,
+    // &:global(.ant-popover-open) {
+    //   background: @primary-1;
+    // }
+    .header-right-content {
+      padding-right: 40px;
+      position: relative;
+    }
+    .header-right-content .iconfont {
+      position: absolute;
+      right: 0;
+      top: -7px;
+      font-size: 20px;
+    }
+    .name {
+      margin-bottom: 3px;
+    }
+    .childrenName {
+      text-align: right;
+    }
+  }
+  .search {
+    padding: 0;
+    margin: 0 12px;
+    &:hover {
+      background: transparent;
+    }
+  }
+  .account {
+    .avatar {
+      margin: 20px 8px 20px 0;
+      // color: @primary-color;
+      background: rgba(255, 255, 255, 0.85);
+      vertical-align: middle;
+    }
+  }
+}
+
+@media only screen and (max-width: 991) {
+  .header {
+    :global(.ant-divider-vertical) {
+      vertical-align: unset;
+    }
+    .name {
+      display: none;
+    }
+    i.trigger {
+      padding: 0 12px;
+    }
+    .logo {
+      padding-right: 12px;
+      position: relative;
+    }
+    .right {
+      position: absolute;
+      right: 12px;
+      top: 0;
+      background: #fff;
+      .account {
+        .avatar {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1439px) {
+  .right {
+    border-left: 1px solid #f0f0f0;
+  }
+}

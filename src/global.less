@@ -1,0 +1,61 @@
+@import './style/default.less';
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.xkd-layout {
+  min-height: 100vh;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  font-size: 14px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.xkd-globalSpin {
+  width: 100%;
+  margin: 40px 0 !important;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/*.ant-modal {
+  top: 50%;
+  margin-top: -325px;
+}*/
+.ant-message {
+  z-index: 1200;
+}
+.ant-spin-nested-loading > div > .ant-spin{
+  background-color: #fff;
+}
+.ant-spin{
+  max-height:none !important;
+}
+.ant-table-wrapper,.ant-list{
+  .ant-spin-nested-loading{
+    &> div > .ant-spin{
+      max-height:none !important;
+    }
+  } 
+}
+
+.ant-card-body{
+  padding: 16px !important;
+}
+

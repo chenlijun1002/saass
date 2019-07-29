@@ -1,0 +1,117 @@
+@import '../../../../style/index.less';
+
+.draggableImagesBox {
+  position: 'relative';
+  width: 488px;
+}
+
+.modal {
+  > div > div:nth-child(3) {
+    padding: 0;
+  }
+}
+.steps {
+  display: flex;
+  background: rgba(245, 245, 245, 1);
+  margin-bottom: 24px;
+  height: 56px;
+  opacity: 1;
+  align-items: center;
+  padding-left: 56px;
+  .step {
+    display: flex;
+    .circle {
+      width: 24px;
+      height: 24px;
+      border: 1px solid rgba(191, 191, 191, 1);
+      border-radius: 50%;
+      opacity: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .middle {
+      margin: 0 8px;
+      color: #8c8c8c;
+      font-size: 14px;
+    }
+    .right {
+      margin: 0 8px;
+    }
+  }
+}
+.multiCrops {
+  position: relative;
+  max-height: 420px;
+  width: 608px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  margin: 0 auto;
+  > div:nth-child(1) > div {
+    background: rgba(240, 247, 255, 1) !important;
+    border: 1px solid rgb(46, 116, 255);
+    opacity: 1;
+    > div:nth-child(1) {
+      background: rgba(46, 116, 255, 1);
+    }
+  }
+}
+.footRow {
+  height: 53px;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px -1px 0px rgba(229, 229, 229, 1);
+  opacity: 1;
+  border-radius: 0px 0px 4px 4px;
+  display: flex;
+  align-items: center;
+}
+.modalText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8em;
+}
+
+.navText {
+  margin-bottom: 16px;
+  color: #999;
+  > span:nth-child(1) {
+    color: #000;
+    margin-right: 8px;
+  }
+}
+
+.bottomChangeImage {
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  width: 100%;
+  cursor: pointer;
+}
+.hotAreaModalBox {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(51, 136, 255, 0.5);
+  color: #fff;
+  cursor: pointer;
+}
+
+.draggableImage {
+  position: relative;
+  width: 488px;
+  .addIsDraggingModal {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(245, 245, 245, 0.6);
+  }
+}

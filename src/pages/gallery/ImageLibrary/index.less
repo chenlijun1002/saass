@@ -1,0 +1,235 @@
+@import './../../../style/default.less';
+
+.contentBox {
+  padding: 16px;
+  background-color: #fff;
+  :global {
+    .ant-card {
+      color: rgba(0, 0, 0, 0.45);
+    }
+    .ant-card-body {
+      padding: 16px;
+    }
+    .ant-progress-inner {
+      width: 62px !important;
+      height: 62px !important;
+    }
+    .ant-btn-primary {
+      background-color: @primary;
+      border-color: @primary;
+    }
+    a {
+      color: @primary;
+    }
+    a:focus {
+      text-decoration: none;
+    }
+    .ant-layout {
+      min-height: 0;
+    }
+  }
+  .cardList {
+    margin-bottom: 24px;
+  }
+  .flr {
+    text-align: right;
+    input {
+      width: 344px;
+    }
+  }
+  .inputBox {
+    margin-bottom: 16px;
+  }
+  .mainBox {
+    background: #fff;
+    min-height: 0;
+    :global {
+      .ant-menu-item {
+        padding-left: 16px !important;
+      }
+      .ant-menu-inline,
+      .ant-menu-vertical,
+      .ant-menu-vertical-left {
+        border-right: none;
+      }
+      .ant-layout {
+        background: #fff !important;
+      }
+      .ant-table-thead > tr:first-child > th:first-child {
+        border-top-left-radius: 0;
+      }
+      .ant-table-thead > tr:first-child > th:last-child {
+        border-top-right-radius: 0;
+      }
+      .ant-list-item-meta-title {
+        width: 108px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .ant-layout-content {
+        min-width: 0;
+      }
+    }
+    .menuButton {
+      margin: 32px 0 10px 16px;
+    }
+    .tabBox {
+      margin-left: 16px;
+      background: #fff !important;
+      .topBox {
+        margin-bottom: 16px;
+        .aSpan {
+          margin-left: 16px;
+        }
+        a {
+          font-size: 14px;
+        }
+      }
+      .checkAllBox {
+        background-color: #f5f5f5;
+        padding: 16px;
+        margin-bottom: 24px;
+      }
+      .cardStyle {
+        width: 136px;
+        // height: 169px;
+        margin: 0 16px 24px 0;
+        display: inline-block;
+        position: relative;
+        img {
+          width: 134px;
+          height: 134px;
+        }
+        .formChecked {
+          width: 21px;
+          height: 21px;
+          background-color: @primary;
+          text-align: center;
+          position: absolute;
+          top: -1px;
+          right: -1px;
+          display: none;
+          i {
+            color: #fff;
+          }
+        }
+
+        :global {
+          .ant-card-body {
+            width: 134px;
+            // position: absolute;
+            // left: 0;
+            // bottom: 0;
+            padding: 8px;
+          }
+          .ant-card-meta-description {
+            height: 20px;
+            line-height: 20px;
+            label {
+              font-size: 12px;
+              width: 118px;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+            }
+          }
+          .ant-card-actions {
+            // display: none;
+            li {
+              margin: 0;
+              padding: 4px 0;
+            }
+            span {
+              line-height: 24px;
+            }
+            a {
+              font-size: 12px;
+              color: @primary;
+            }
+          }
+          .ant-card-actions > li:not(:last-child) {
+            border-right: 0;
+          }
+        }
+      }
+      .cardStyle:hover :global {
+        // border: 1px solid @primary;
+        // .ant-card-body {
+        //   display: none;
+        // }
+        // .ant-card-actions {
+        //   display: block;
+        // }
+      }
+    }
+  }
+  .menuBox {
+    background: #f5f5f5;
+    .menuCount {
+      float: right;
+      color: #bfbfbf;
+    }
+    // :global {
+    //     .ant-btn-dashed:hover, .ant-btn-dashed:focus {
+    //         color: @primary;
+    //         border-color: @primary;
+    //     }
+    //     .ant-menu-item-selected {
+    //         color: @primary;
+    //         span{
+    //             color: @primary;
+    //         }
+    //     }
+    //     .ant-menu-vertical .ant-menu-item:after, .ant-menu-vertical-left .ant-menu-item:after, .ant-menu-vertical-right .ant-menu-item:after, .ant-menu-inline .ant-menu-item:after {
+    //         border-right: 3px solid @primary;
+    //     }
+    // }
+  }
+  .listBox {
+    position: relative;
+    .selectBox {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+    .changeButton {
+      margin-right: 8px;
+    }
+  }
+}
+
+// 添加分组气泡框
+body {
+  :global {
+    .ant-popover-inner-content {
+      padding: 16px;
+      // height: 134px;
+    }
+    .ant-popover-message {
+      // padding: 0 0 16px 0;
+    }
+    .ant-popover-message-title {
+      padding-left: 0;
+      p {
+        margin-bottom: 8px;
+      }
+      .txtContent {
+        color: rgba(0, 0, 0, 0.45);
+        line-height: 20px;
+      }
+    }
+    .ant-popover-buttons {
+      margin-bottom: 0;
+    }
+    .ant-btn-primary {
+      background-color: @primary;
+      border-color: @primary;
+    }
+    .ant-btn-primary:hover,
+    .ant-btn-primary:focus {
+      background-color: @primary;
+      border-color: @primary;
+    }
+  }
+}

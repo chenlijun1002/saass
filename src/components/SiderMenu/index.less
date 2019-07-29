@@ -1,0 +1,216 @@
+//@import '~antd/lib/style/themes/default.less';
+@ease-in-out-circ: cubic-bezier(0.78, 0.14, 0.15, 0.86);
+.logo {
+  height: 64px;
+  position: relative;
+  line-height: 64px;
+ // padding-left: (@menu-collapsed-width - 32px) / 2;
+  transition: all 0.3s;
+  background: #002140;
+  overflow: hidden;
+  img {
+    display: inline-block;
+    vertical-align: middle;
+    height: 32px;
+  }
+  h1 {
+    color: white;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+    margin: 0 0 0 12px;
+    font-family: 'Myriad Pro', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+  }
+}
+.page-sider-menu {
+  min-height: 100vh;
+  flex-direction: row;
+  // min-width: 72px;
+  width: 184px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 100vh;
+  border-right: 1px solid #f0f0f0;
+  box-sizing: border-box;
+}
+.page-sider-menu-content {
+  height: 100%;
+  margin-top: -0.1px;
+  padding-top: 0.1px;
+}
+.bg-363636{
+  background-color: #363636;
+}
+.bg-25134b{
+  background-color: #25134B !important;
+}
+.page-sider-menu-content-left {
+  float: left;
+  width: 71px;
+  height: 100%;
+  // background-color: #064280;
+  background-color: #363636;
+  overflow-x: hidden;
+}
+.page-sider-menu-content-right {
+  float: right;
+  width: 112px;
+  height: 100%;
+  background-color: #fff;
+}
+.page-sider-menu-content-left .seller-logo {
+  box-sizing: border-box;
+  width: 72px;
+  height: 64px;
+  padding: 16px 0;
+  text-align: center;
+}
+.seller-logo img {
+  display: block;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.seller-logo  span {
+  display: block;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.menu-first-link {
+  display: flex;
+  width: 72px;
+  height: 72px;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.45);
+  // margin-top: 8px;
+  text-decoration: none !important;
+}
+.menu-first-link.active {
+  color: rgba(255, 255, 255, 0.85);
+  position: relative;
+}
+.menu-first-link.active{
+  &::after{
+    content: '';
+    position: absolute;
+    border:8px solid #fff;
+    top:0;
+    right: 0;
+    border-top: 8px solid transparent;
+    border-left: 8px solid transparent;  
+    border-bottom: 8px solid transparent;
+    top: 50%;
+    transform: translate(0,-50%);
+  }
+}
+.menu-first-link:hover {
+  color: rgba(255, 255, 255, 0.65);
+}
+.menu-first-item-content {
+  width: 100%;
+  text-align: center;
+  :global {
+    .iconfont {
+      display: block;
+      text-align: center;
+      height: 24px;
+      line-height: 24px;
+      font-size: 24px;
+      margin-bottom: 3px;
+    }
+  }
+}
+.menu-first-name {
+  font-size: 12px;
+}
+.one-menu-breadcrumbs {
+  line-height: 64px;
+  font-size: 14px;
+  // color: #2e97ff;
+  // color: #2E74FF;
+  padding-left: 20px;
+  border-bottom: 1px solid #f0f0f0;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+.sider-menu-second-list {
+  box-sizing: border-box;
+  // padding-left: 20px;
+  background-color: #fff;
+  // width: 112px;  
+  width: 128px;  
+  padding-top: 8px;
+  padding-right: 16px;
+}
+.sider-menu-second-list .color-845be5 {
+  color: #845BE5 !important;
+ // background: #F0F7FF;
+}
+.sider-menu-second-list .active {
+  color: #2e74ff;
+  background: #F0F7FF;
+}
+.sider-menu-second-list .bg-f3eeff {
+  // color: #2e74ff;
+  background: #f3eeff;
+}
+.sider-menu-second-list .menu-second-title {
+  height: 48px;
+  line-height: 60px;
+}
+.menu-second-item-group {
+  font-size: 14px;
+  a {
+    display: inline-block;
+    width: 88px;
+    height: 36px;
+    line-height: 36px;
+    color: rgba(0, 0, 0, 0.85);
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 4px;
+    text-align: left;
+    padding: 0 8px;
+  }
+  a:hover {
+    //color: rgba(0, 0, 0, 0.65);
+    background-color: #F0F7FF;
+  }  
+  .hover-f3eeff:hover{
+    background-color: #f3eeff !important;
+  }
+}
+
+.pop{
+ 
+  :global{
+    .zent-pop-inner{
+      padding: 0 !important;
+    }
+    .zent-menu-item{
+      font-size: 14px;
+    }   
+    .zent-menu-item:hover{
+      background: #F0F7FF;
+      color:#000;
+    }
+  }
+}
+.height60{
+  height: 60px !important;
+}
+.link{
+  //padding-left: 20px;
+  text-align: center;
+  margin-bottom: 2px;
+  // &:hover{
+  //   background: #F0F7FF;
+  // }
+}
